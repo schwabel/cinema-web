@@ -1,0 +1,16 @@
+.hero { position: relative; isolation: isolate; }
+.hero-bg { position: absolute; inset: 0; background-size: cover; background-position: center; filter: brightness(0.6) saturate(1.1); }
+.hero-overlay { position: absolute; inset: 0; background: radial-gradient(1200px 300px at 50% 20%, rgba(229,9,20,0.18), transparent 50%), linear-gradient(180deg, rgba(0,0,0,0.4), rgba(0,0,0,0.85)); }
+.hero-inner { position: relative; max-width: 1200px; margin: 0 auto; padding: 48px 20px 28px; }
+.hero-layout { display: grid; grid-template-columns: 140px 1fr; gap: 20px; align-items: start; }
+@media (min-width: 700px) { .hero-layout { grid-template-columns: 240px 1fr; gap: 28px; } }
+.hero-media { position: relative; }
+.hero-poster { display: block; width: 100%; height: auto; border-radius: 12px; border: 1px solid rgba(255,255,255,0.08); box-shadow: 0 8px 20px rgba(0,0,0,0.4); background: #111; }
+.hero-content { max-width: 800px; }
+.hero-title { margin: 0 0 10px; font-size: clamp(28px, 3.2vw, 44px); font-family: 'Playfair Display', serif; font-weight: 700; }
+.hero-title .eyebrow { display: block; color: #9aa0a6; font-family: Inter, system-ui, sans-serif; font-weight: 600; font-size: 12px; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 6px; }
+.hero-title .year { color: #9aa0a6; font-size: 0.85em; }
+.hero-synopsis { color: #c2c7ce; line-height: 1.6; margin: 8px 0 16px; font-size: clamp(14px, 1.8vw, 18px); }
+.hero-actions { display: flex; gap: 12px; flex-direction: column; }
+.hero-trailer { width: 100%; max-width: 560px; aspect-ratio: 16 / 9; }
+.hero-trailer iframe { width: 100%; height: 100%; border: 0; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.4); }

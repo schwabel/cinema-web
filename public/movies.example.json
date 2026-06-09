@@ -1,0 +1,36 @@
+[
+  {
+    "id": "example-001",
+    "title": "Example Film",
+    "synopsis": "A gripping story about something remarkable that will keep audiences on the edge of their seats.",
+    "runtime": 112,
+    "rating": "PG-13",
+    "genres": ["Drama", "Thriller"],
+    "posterUrl": "/placeholder/poster.svg",
+    "backdropUrl": "/placeholder/poster.svg",
+    "releaseDate": "2025-01-01",
+    "director": "Jane Director",
+    "cast": ["Actor One", "Actor Two", "Actor Three"],
+    "trailerUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    "showtimes": [
+      { "date": "2025-12-01", "times": ["17:00", "20:00"] },
+      { "date": "2025-12-02", "times": ["14:00", "17:00", "20:30"] }
+    ]
+  },
+  {
+    "id": "example-002",
+    "title": "Another Feature",
+    "synopsis": "An adventure spanning continents, testing the limits of friendship and courage.",
+    "runtime": 95,
+    "rating": "PG",
+    "genres": ["Adventure", "Family"],
+    "posterUrl": "/placeholder/poster.svg",
+    "backdropUrl": "/placeholder/poster.svg",
+    "releaseDate": "2025-02-14",
+    "director": "John Filmmaker",
+    "cast": ["Star One", "Star Two"],
+    "showtimes": [
+      { "date": "2025-12-08", "times": ["13:00", "16:00"] }
+    ]
+  }
+]

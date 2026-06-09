@@ -1,0 +1,69 @@
+.movie {
+    display: grid;
+    gap: 16px;
+    padding: 16px;
+    background: #0b0b0b;
+    border: 1px solid #1a1a1a;
+    border-radius: 12px;
+    overflow: hidden;
+    --poster-pad: 24px;
+    --badge-space: 36px;
+}
+.movie.card { grid-template-columns: 120px 1fr; }
+.movie.list { grid-template-columns: 100px 1fr; }
+
+@media (min-width: 600px) {
+  .movie.card { grid-template-columns: 180px 1fr; }
+}
+
+.movie .poster {
+    position: relative;
+    aspect-ratio: 2 / 3;
+    padding: var(--poster-pad);
+    padding-bottom: calc(var(--poster-pad) + var(--badge-space));
+    box-sizing: border-box;
+    background: transparent;
+}
+
+.movie .poster img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center top;
+    background: transparent;
+}
+
+.rating-badge {
+    position: absolute;
+    bottom: var(--poster-pad);
+    left: var(--poster-pad);
+    font-size: 12px;
+    background: transparent;
+    border: 1px solid #2a2a2a;
+    padding: 4px 6px;
+    border-radius: 6px;
+}
+
+.movie .info {
+    padding: 0;
+}
+.title { margin: 4px 0 6px; font-size: 18px; font-weight: 700; }
+.year { color: #9aa0a6; font-weight: 600; }
+.meta { display: flex; gap: 8px; color: #9aa0a6; font-size: 13px; align-items: center; }
+.opens { color: #e8eaed; font-size: 13px; margin-top: 6px; }
+.synopsis { color: #c2c7ce; font-size: 14px; line-height: 1.5; margin: 10px 0 12px; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.details { color: #9aa0a6; font-size: 13px; display: flex; gap: 8px; align-items: baseline; flex-wrap: wrap; }
+.details .label { color: #c2c7ce; font-weight: 600; }
+.details .dot { color: #555; }
+.showtimes { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+.showtimes-label { color: #9aa0a6; font-size: 12px; }
+.times { display: flex; gap: 8px; flex-wrap: wrap; }
+.time-chip { background: #121212; border: 1px solid #2a2a2a; color: #e8eaed; padding: 6px 10px; border-radius: 8px; font-size: 13px; }
+.actions { display: flex; gap: 10px; }
+.btn { display: inline-flex; align-items: center; justify-content: center; height: 36px; padding: 0 12px; border-radius: 8px; border: 1px solid transparent; font-weight: 600; }
+.btn.primary { background: #e50914; color: white; }
+.btn.primary:hover { filter: brightness(1.1); }
+.btn.ghost { background: transparent; border-color: #2a2a2a; color: #e8eaed; }
+.btn.ghost:hover { border-color: #3a3a3a; }
+

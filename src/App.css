@@ -1,0 +1,7 @@
+/* App layout scaffolding for the theater site */
+.app { display: flex; flex-direction: column; min-height: 100vh; background: var(--bg); }
+.main { flex: 1; }
+.section { padding: 8px 0; }
+.spacer { height: 20px; }
+.loading, .error { max-width: 1200px; margin: 0 auto; padding: 28px 20px; color: var(--muted); }
+.error { color: #ffb3b8; }

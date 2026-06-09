@@ -1,0 +1,9 @@
+.th-footer { border-top: 1px solid #1f1f1f; background: #000; }
+.th-footer .container { max-width: 1200px; margin: 0 auto; padding: 28px 20px; }
+.cols { display: grid; grid-template-columns: 1fr; gap: 16px; }
+@media (min-width: 700px) { .cols { grid-template-columns: repeat(3, 1fr); } }
+.ft-title { font-weight: 700; margin-bottom: 8px; }
+.ft-text { color: #9aa0a6; margin: 4px 0; }
+.ft-link { color: #e8eaed; }
+.socials { display: flex; gap: 12px; }
+.copy { color: #9aa0a6; margin-top: 20px; font-size: 12px; }
